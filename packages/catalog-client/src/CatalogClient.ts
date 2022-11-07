@@ -185,7 +185,7 @@ export class CatalogClient implements CatalogApi {
 
     const baseUrl = await this.discoveryApi.getBaseUrl('catalog');
     const query = params.length ? `?${params.join('&')}` : '';
-    const url = `${baseUrl}/entities/by-ref${query}`;
+    const url = `${baseUrl}/entities/by-refs${query}`;
 
     const response = await this.fetchApi.fetch(url, {
       headers: {

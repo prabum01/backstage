@@ -206,7 +206,7 @@ describe('CatalogClient', () => {
         },
       };
       server.use(
-        rest.post(`${mockBaseUrl}/entities/by-ref`, async (req, res, ctx) => {
+        rest.post(`${mockBaseUrl}/entities/by-refs`, async (req, res, ctx) => {
           expect(req.url.searchParams.get('fields')).toBe('a,b');
           await expect(req.json()).resolves.toEqual({
             entityRefs: ['k:n/a', 'k:n/b'],
