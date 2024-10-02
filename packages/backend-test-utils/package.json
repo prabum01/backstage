@@ -38,7 +38,7 @@
     "@backstage/backend-common": "workspace:^",
     "@backstage/backend-plugin-api": "workspace:^",
     "@backstage/cli": "workspace:^",
-    "@backstage/config": "workspace:^",
+    "@backstage/config": "0.1.1",
     "better-sqlite3": "^7.5.0",
     "knex": "^2.0.0",
     "msw": "^0.48.0",
